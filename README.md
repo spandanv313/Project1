@@ -37,3 +37,5 @@ python script.py
 set  MLFLOW_TRACKING_URI=https://dagshub.com/spandanv313/Project1.mlflow
 set MLFLOW_TRACKING_USERNAME=spandanv313
 set MLFLOW_TRACKING_PASSWORD=0b543382e61661ba09a29a70bd22d65171eee148
+
+212202432638.dkr.ecr.eu-north-1.amazonaws.com/mlproj
