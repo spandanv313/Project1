@@ -26,3 +26,14 @@ python app.py
 Now,
 
 open up you local host and port
+
+
+
+MLFLOW_TRACKING_URI=https://dagshub.com/spandanv313/Project1.mlflow \
+MLFLOW_TRACKING_USERNAME=spandanv313 \
+MLFLOW_TRACKING_PASSWORD=0b543382e61661ba09a29a70bd22d65171eee148 \
+python script.py
+
+set  MLFLOW_TRACKING_URI=https://dagshub.com/spandanv313/Project1.mlflow
+set MLFLOW_TRACKING_USERNAME=spandanv313
+set MLFLOW_TRACKING_PASSWORD=0b543382e61661ba09a29a70bd22d65171eee148
