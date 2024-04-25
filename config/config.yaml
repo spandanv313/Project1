@@ -3,10 +3,9 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/winequality-data.zip
+  source_URL: https://github.com/spandanv313/dummy1/raw/main/winequality-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
-
 
 
 data_validation:
@@ -15,11 +14,9 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
 
 
-
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/winequality-red.csv
-
 
 
 model_trainer:
@@ -29,15 +26,8 @@ model_trainer:
   model_name: model.joblib
 
 
-
 model_evaluation:
   root_dir: artifacts/model_evaluation
   test_data_path: artifacts/data_transformation/test.csv
   model_path: artifacts/model_trainer/model.joblib
   metric_file_name: artifacts/model_evaluation/metrics.json
-
-
-
-
-
-

@@ -6,10 +6,9 @@ import mlflow
 import mlflow.sklearn
 import numpy as np
 import joblib
-from mlProject.entity.config_entity import ModelEvaluationConfig
-from mlProject.utils.common import save_json
+from mlproject.entity.config_entity import ModelEvaluationConfig
+from mlproject.utils.common import save_json
 from pathlib import Path
-
 
 class ModelEvaluation:
     def __init__(self, config: ModelEvaluationConfig):
@@ -64,5 +63,3 @@ class ModelEvaluation:
                 mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
             else:
                 mlflow.sklearn.log_model(model, "model")
-
-    
