@@ -1,9 +1,10 @@
 import pandas as pd
 import os
-from mlproject import logger
+from mlProject import logger
 from sklearn.linear_model import ElasticNet
 import joblib
-from mlproject.entity.config_entity import ModelTrainerConfig
+from mlProject.entity.config_entity import ModelTrainerConfig
+
 
 
 class ModelTrainer:
@@ -26,3 +27,4 @@ class ModelTrainer:
         lr.fit(train_x, train_y)
 
         joblib.dump(lr, os.path.join(self.config.root_dir, self.config.model_name))
+

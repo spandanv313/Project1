@@ -4,7 +4,9 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name= "mlproject"
+
+project_name = "mlProject"
+
 
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -27,14 +29,19 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "templates/index.html"
+    "templates/index.html",
+    "test.py"
+
 
 ]
 
+
+
+
 for filepath in list_of_files:
     filepath = Path(filepath)
-
     filedir, filename = os.path.split(filepath)
+
 
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
